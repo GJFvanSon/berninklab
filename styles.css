@@ -690,6 +690,9 @@ footer {
   color: var(--accent);
   font-weight: 600;
 }
+.all-publications-button {
+  margin-top: 2.5rem;
+}
 
 .publication-link:hover {
   text-decoration: underline;
