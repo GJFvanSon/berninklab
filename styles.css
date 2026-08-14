@@ -582,3 +582,32 @@ footer {
     flex-direction: column;
   }
 }
+.video-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 500px;
+  border-radius: 40px;
+  background: #0d2622;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-video-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.25)
+  );
+}
+
+.video-hero .hero-card {
+  z-index: 2;
+}
