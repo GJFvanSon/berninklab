@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="Publications from BerninkLab — research in human immunology, immune-cell biology and tissue immunology."
+    content="Publications from BerninkLab in human immunology, tissue immunology and immune-cell biology."
   >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,375 +49,438 @@
 </header>
 
 
-<main>
+<main class="pure-publications">
 
-  <section class="publications-page">
-
+  <section class="publications-header">
     <div class="container">
 
       <p class="section-label">BerninkLab</p>
+
       <h1>Publications</h1>
 
-      <p class="publications-intro">
-        Our research explores human immune-cell biology,
-        tissue immunology and the mechanisms that regulate
-        immune responses in health and disease.
+      <p>
+        Research output from the BerninkLab in human immunology,
+        immune-cell biology and tissue immunology.
       </p>
 
+    </div>
+  </section>
 
-      <!-- 2026 -->
 
-      <div class="publication-year">
+  <section class="publications-browser">
 
-        <h2>2026</h2>
+    <div class="container publications-layout">
 
-        <article class="publication-full">
 
-          <h3>
-            A dual-pathway Wnt-IL-13 fusion protein enhances human intestinal regeneration through tuft cell activation
-          </h3>
+      <!-- SIDEBAR -->
 
-          <p class="publication-authors">
-            Yang, L., Huang, L., van Rijt, F. L. H., Zhang, B., Giladi, A., Bernink, J. H., Clevers, H. & Janda, C. Y.
+      <aside class="publication-sidebar">
+
+        <div class="filter-section">
+          <h3>Search publications</h3>
+
+          <input
+            type="search"
+            id="publicationSearch"
+            placeholder="Search title or author..."
+          >
+        </div>
+
+
+        <div class="filter-section">
+
+          <h3>Year</h3>
+
+          <label>
+            <input type="checkbox" class="year-filter" value="2026">
+            2026
+          </label>
+
+          <label>
+            <input type="checkbox" class="year-filter" value="2025">
+            2025
+          </label>
+
+          <label>
+            <input type="checkbox" class="year-filter" value="2024">
+            2024
+          </label>
+
+          <label>
+            <input type="checkbox" class="year-filter" value="2023">
+            2023
+          </label>
+
+          <label>
+            <input type="checkbox" class="year-filter" value="2022">
+            2022
+          </label>
+
+        </div>
+
+
+        <div class="filter-section">
+
+          <h3>Type</h3>
+
+          <label>
+            <input type="checkbox">
+            Journal article
+          </label>
+
+          <label>
+            <input type="checkbox">
+            Review
+          </label>
+
+          <label>
+            <input type="checkbox">
+            Editorial
+          </label>
+
+        </div>
+
+      </aside>
+
+
+      <!-- PUBLICATION RESULTS -->
+
+      <div class="publication-results">
+
+        <div class="publication-toolbar">
+
+          <p>
+            <strong id="publicationCount">6</strong>
+            publications
           </p>
 
-          <p class="publication-journal">
-            Journal of biological chemistry, 2026
+          <select id="publicationSort">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+          </select>
+
+        </div>
+
+
+        <!-- PAPER 1 -->
+
+        <article
+          class="pure-publication"
+          data-year="2026"
+          data-title="example paper title immune cells"
+        >
+
+          <div class="publication-type">
+            Research article
+          </div>
+
+          <h2>
+            Example paper title about immune-cell function in human tissues
+          </h2>
+
+          <p class="pure-authors">
+            Bernink JH, Author A, Author B, Author C
           </p>
 
-          <details class="abstract">
+          <p class="pure-journal">
+            Journal of Immunology
+            <span>•</span>
+            2026
+            <span>•</span>
+            Vol. 25
+          </p>
 
-            <summary>Read abstract</summary>
+          <details class="pure-abstract">
+
+            <summary>Abstract</summary>
 
             <p>
-              Compromised intestinal regenerative responses drive severe inflammatory conditions, such as inflammatory bowel disease and graft-versus-host disease, affecting millions of people worldwide each year. Despite extensive research, effective therapies remain limited, and no curative treatments are currently available. We recently discovered that human intestinal tuft cells promote tissue repair following injury through Wnt and IL-4/IL-13 signaling pathways. Building on this discovery, here, we report the engineering and functional validation of a synthetic Wnt-IL-13 fusion protein that simultaneously activates both the Wnt and IL-4/IL-13 signaling pathways to enhance human intestinal tuft cell activity. Employing human organoid technology, we demonstrate that this therapeutic approach promotes mucosal healing.
+              Add the abstract of the paper here. This section can contain
+              a full research abstract while keeping the publication list
+              compact when it is closed.
             </p>
 
           </details>
 
-          <a
-            class="publication-link"
-            href="https://doi.org/10.1016/j.jbc.2026.113187"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View publication →
-          </a>
+          <div class="publication-actions">
+
+            <a
+              href="https://doi.org/10.xxxx/xxxxx"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              DOI →
+            </a>
+
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              PubMed →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- PAPER 2 -->
+
+        <article
+          class="pure-publication"
+          data-year="2025"
+          data-title="innate lymphoid cells tissue immunity"
+        >
+
+          <div class="publication-type">
+            Research article
+          </div>
+
+          <h2>
+            Innate lymphoid cells and the regulation of tissue immunity
+          </h2>
+
+          <p class="pure-authors">
+            Author A, Bernink JH, Author B, Author C
+          </p>
+
+          <p class="pure-journal">
+            Nature Immunology
+            <span>•</span>
+            2025
+          </p>
+
+          <details class="pure-abstract">
+
+            <summary>Abstract</summary>
+
+            <p>
+              Place the publication abstract here.
+            </p>
+
+          </details>
+
+          <div class="publication-actions">
+
+            <a
+              href="https://doi.org/10.xxxx/xxxxx"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              DOI →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- PAPER 3 -->
+
+        <article
+          class="pure-publication"
+          data-year="2025"
+          data-title="human immune responses tissue microenvironment"
+        >
+
+          <div class="publication-type">
+            Review
+          </div>
+
+          <h2>
+            Human immune responses within the tissue microenvironment
+          </h2>
+
+          <p class="pure-authors">
+            Bernink JH, Author A, Author B
+          </p>
+
+          <p class="pure-journal">
+            Trends in Immunology
+            <span>•</span>
+            2025
+          </p>
+
+          <details class="pure-abstract">
+
+            <summary>Abstract</summary>
+
+            <p>
+              Place the abstract here.
+            </p>
+
+          </details>
+
+          <div class="publication-actions">
+
+            <a
+              href="https://doi.org/10.xxxx/xxxxx"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              DOI →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- PAPER 4 -->
+
+        <article
+          class="pure-publication"
+          data-year="2024"
+          data-title="immune cell plasticity human tissues"
+        >
+
+          <div class="publication-type">
+            Research article
+          </div>
+
+          <h2>
+            Immune-cell plasticity in human tissues
+          </h2>
+
+          <p class="pure-authors">
+            Author A, Author B, Bernink JH
+          </p>
+
+          <p class="pure-journal">
+            Science Immunology
+            <span>•</span>
+            2024
+          </p>
+
+          <details class="pure-abstract">
+
+            <summary>Abstract</summary>
+
+            <p>
+              Place the abstract here.
+            </p>
+
+          </details>
+
+          <div class="publication-actions">
+
+            <a
+              href="https://doi.org/10.xxxx/xxxxx"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              DOI →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- PAPER 5 -->
+
+        <article
+          class="pure-publication"
+          data-year="2023"
+          data-title="immune signaling cellular communication"
+        >
+
+          <div class="publication-type">
+            Research article
+          </div>
+
+          <h2>
+            Cellular communication networks in human immunity
+          </h2>
+
+          <p class="pure-authors">
+            Bernink JH, Author A, Author B
+          </p>
+
+          <p class="pure-journal">
+            Cell Reports
+            <span>•</span>
+            2023
+          </p>
+
+          <details class="pure-abstract">
+
+            <summary>Abstract</summary>
+
+            <p>
+              Place the abstract here.
+            </p>
+
+          </details>
+
+          <div class="publication-actions">
+
+            <a
+              href="https://doi.org/10.xxxx/xxxxx"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              DOI →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- PAPER 6 -->
+
+        <article
+          class="pure-publication"
+          data-year="2022"
+          data-title="tissue resident immune cells"
+        >
+
+          <div class="publication-type">
+            Review
+          </div>
+
+          <h2>
+            Tissue-resident immune cells in health and disease
+          </h2>
+
+          <p class="pure-authors">
+            Author A, Bernink JH, Author B
+          </p>
+
+          <p class="pure-journal">
+            Frontiers in Immunology
+            <span>•</span>
+            2022
+          </p>
+
+          <details class="pure-abstract">
+
+            <summary>Abstract</summary>
+
+            <p>
+              Place the abstract here.
+            </p>
+
+          </details>
+
+          <div class="publication-actions">
+
+            <a
+              href="https://doi.org/10.xxxx/xxxxx"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              DOI →
+            </a>
+
+          </div>
+
+        </article>
 
       </div>
 
-
-      <!-- 2025 -->
-
-      <div class="publication-year">
-
-        <h2>2025</h2>
-
-        <article class="publication-full">
-
-          <h3>
-            Intestinal tuft cell subtypes represent successive stages of maturation driven by crypt-villus signaling gradients
-          </h3>
-
-          <p class="publication-authors">
-            Buissant des Amorie, J. R., Betjes, M. A., Bernink, J. H., Hageman, J. H., Geurts, V. E., Begthel, H., Laskaris, D., Heinz, M. C., Jordens, I., Vinck, T., Houtekamer, R. M., Verlaan-Klink, I., Brunner, S. R., van Rheenen, J., Gloerich, M., Clevers, H., Tans, S. J., van Zon, J. S. & Snippert, H. J. G.
-          </p>
-
-          <p class="publication-journal">
-            Nature Communications, 2025
-          </p>
-
-          <details class="abstract">
-
-            <summary>Read abstract</summary>
-
-            <p>
-              Intestinal tuft cells are epithelial sentinels that trigger host defense upon detection of parasite-derived compounds. While they represent potent targets for immunomodulatory therapies in inflammation-driven intestinal diseases, their functioning and differentiation are poorly understood. Here, we reveal common intermediary transcriptomes among the previously described tuft-1 and tuft-2 subtypes in mouse and human. Tuft cell subtype-specific reporter knock-ins in organoids show that the two subtypes reflect successive post-mitotic maturation stages within the tuft cell lineage. In vitro stimulation with interleukin-4 and 13 is sufficient to fuel the generation of new Nrep+ tuft-1 cells, arising from tuft precursors (tuft-p). Subsequently, changes in crypt-villus signaling gradients, such as BMP, and cholinergic signaling, are required to advance maturation towards Chat+ tuft-2 phenotypes. Functionally, we find chemosensory capacity to increase during maturation. Our tuft subtype-specific reporters and optimized differentiation strategy in organoids provide a platform to study immune-related tuft cell subtypes and their unique chemosensory properties.
-            </p>
-
-          </details>
-
-          <a
-            class="publication-link"
-            href="https://doi.org/10.1038/s41467-025-61878-9"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View publication →
-          </a>
-
-        </article>
-
-                <article class="publication-full">
-
-          <h3>
-            The sweet side of IL-22: Microbiome interactions
-          </h3>
-
-          <p class="publication-authors">
-            Bernink, J. H.
-          </p>
-
-          <p class="publication-journal">
-            Nature microbiology, 2025
-          </p>
-
-          <details class="abstract">
-
-            <summary>Read abstract</summary>
-
-            <p>
-              Dysbiosis is a harbinger of severe intestinal pathologies driving enhanced susceptibility to colonization by opportunistic pathogens. Type 3 innate lymphoid cell-derived IL-22 harnesses pathogen colonization resistance by regulating the galactosylation status of intestinal epithelial cells.
-            </p>
-
-          </details>
-
-          <a
-            class="publication-link"
-            href="https://doi.org/10.1038/s41564-025-01945-5"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View publication →
-          </a>
-
-        </article>
-        
-      </div>
-
-       <!-- 2024 -->
-
-      <div class="publication-year">
-
-        <h2>2024</h2>
-
-        <article class="publication-full">
-
-          <h3>
-            Tuft cells act as regenerative stem cells in the human intestine
-          </h3>
-
-          <p class="publication-authors">
-            Huang, L., Bernink, J. H., Giladi, A., Krueger, D., van Son, G. J. F., Geurts, M. H., Busslinger, G., Lin, L., Begthel, H., Zandvliet, M., Buskens, C. J., Bemelman, W. A., López-Iglesias, C., Peters, P. J. & Clevers, H.
-          </p>
-
-          <p class="publication-journal">
-            Nature, 2024
-          </p>
-
-          <details class="abstract">
-
-            <summary>Read abstract</summary>
-
-            <p>
-              In mice, intestinal tuft cells have been described as a long-lived, postmitotic cell type. Two distinct subsets have been identified: tuft-1 and tuft-2 (ref. 1). By combining analysis of primary human intestinal resection material and intestinal organoids, we identify four distinct human tuft cell states, two of which overlap with their murine counterparts. We show that tuft cell development depends on the presence of Wnt ligands, and that tuft cell numbers rapidly increase on interleukin-4 (IL-4) and IL-13 exposure, as reported previously in mice2–4. This occurs through proliferation of pre-existing tuft cells, rather than through increased de novo generation from stem cells. Indeed, proliferative tuft cells occur in vivo both in fetal and in adult human intestine. Single mature proliferating tuft cells can form organoids that contain all intestinal epithelial cell types. Unlike stem and progenitor cells, human tuft cells survive irradiation damage and retain the ability to generate all other epithelial cell types. Accordingly, organoids engineered to lack tuft cells fail to recover from radiation-induced damage. Thus, tuft cells represent a damage-induced reserve intestinal stem cell pool in humans.
-            </p>
-
-          </details>
-
-          <a
-            class="publication-link"
-            href="https://doi.org/10.1038/s41586-024-07952-6"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View publication →
-          </a>
-
-        </article>
-
-      </div>
-       <!-- 2023 -->
-
-      <div class="publication-year">
-
-        <h2>2023</h2>
-
-        <article class="publication-full">
-
-          <h3>
-            Expanded ILC2s in human infant intestines promote tissue growth
-          </h3>
-
-          <p class="publication-authors">
-            Kimberly J. Möller, Lucy H. M. Wegner, Jakob Malsy, Martin E. Baumdick, Malte Borggrewe, Ana Jordan-Paiz, Johannes M. Jung, Glòria Martrus, Paul Kretschmer, Adrian F. Sagebiel, Renée R. C. E. Schreurs, Sven H. Hagen, Gunter Burmester, Till S. Clauditz, Steven T. Pals, Michael Boettcher, Nathaniel Melling, Guido Sauter, Christian Tomuschat, Ingo KönigsUdo Schumacher, Marcus Altfeld, Jochem H. Bernink, Daniel Perez, Konard Reinshagen, Madeleine J. Bunders
-          </p>
-
-          <p class="publication-journal">
-            Mucosal immunology, 2023
-          </p>
-
-          <details class="abstract">
-
-            <summary>Read abstract</summary>
-
-            <p>
-              Early life is characterized by extraordinary challenges, including rapid tissue growth and immune adaptation to foreign antigens after birth. During this developmental stage, infants have an increased risk of immune-mediated diseases. Here, we demonstrate that tissue-resident, interleukin (IL)-13- and IL-4-producing group 2 innate lymphoid cells (ILC2s) are enriched in human infant intestines compared to adult intestines. Organoid systems were employed to assess the role of infant intestinal ILC2s in intestinal development and showed that IL-13 and IL-4 increased epithelial cell proliferation and skewed cell differentiation toward secretory cells. IL-13 furthermore upregulated the production of mediators of type-2 immunity by infant intestinal epithelial cells, including vascular endothelial growth factor-A and IL-26, a chemoattractant for eosinophils. In line with these in vitro findings increased numbers of eosinophils were detected in vivo in infant intestines. Taken together, ILC2s are enriched in infant intestines and can support intestinal development while inducing an epithelial secretory response associated with type 2 immune-mediated diseases.
-            </p>
-
-          </details>
-
-          <a
-            class="publication-link"
-            href="https://doi.org/10.1016/j.mucimm.2023.04.004"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View publication →
-          </a>
-
-        </article>
-
-      </div>
-
-       <!-- 2021 -->
-
-      <div class="publication-year">
-
-        <h2>2021</h2>
-
-        <article class="publication-full">
-
-          <h3>
-            CD127+ CD94+ innate lymphoid cells expressing granulysin and perforin are expanded in patients with Crohn’s disease
-          </h3>
-
-          <p class="publication-authors">
-            Krabbendam, L., Heesters, B. A., Kradolfer, C. M. A., Haverkate, N. J. E., Becker, M. A. J., Buskens, C. J., Bemelman, W. A., Bernink, J. H. & Spits, H.
-          </p>
-
-          <p class="publication-journal">
-            Mucosal communications, 2021
-          </p>
-
-          <details class="abstract">
-
-            <summary>Read abstract</summary>
-
-            <p>
-              Phenotypic definition of helper ILC1 and NK cells is problematic due to overlapping markers. Recently we showed the identification of cytotoxic ILC3s characterized by expression of CD94. Here we analyse CD127+ ILCs and NK cells in intestinal lamina propria from healthy donors and Crohn’s disease patients and identify two populations of CD127+CD94+ ILCs, designated population A and B, that can be distinguished on the expression of CD117, CD18 and cytotoxic molecules. Population B expresses granulysin, a cytotoxic molecule linked to bacterial lysis and/or chemotaxis of monocytes. Granulysin protein is secreted by population B cells upon stimulation with IL-15. Activation of population B in the presence of TGF-β strongly reduces the expression of cytotoxic effector molecules of population B. Strikingly, samples from individuals that suffer from active Crohn’s disease display enhanced frequencies of granulysin-expressing effector CD127+CD94+ ILCs in comparison to controls. Thus this study identifies group 1 ILC populations which accumulate in inflamed intestinal tissue of Crohn’s disease patients and may play a role in the pathology of the disease.
-            </p>
-
-          </details>
-
-          <a
-            class="publication-link"
-            href="https://doi.org/10.1038/s41467-021-26187-x"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View publication →
-          </a>
-
-        </article>
-
-        <article class="publication-full">
-
-          <h3>
-            Identification of human cytotoxic ILC3s
-          </h3>
-
-          <p class="publication-authors">
-            Krabbendam, L., Heesters, B. A., Kradolfer, C. M. A., Spits, H. & Bernink, J. H.
-          </p>
-
-          <p class="publication-journal">
-            European journal of immunology, 2021
-          </p>
-
-          <details class="abstract">
-
-            <summary>Read abstract</summary>
-
-            <p>
-              Human ILCs are classically categorized into five subsets; cytotoxic CD127−CD94+ NK cells and non-cytotoxic CD127+CD94−, ILC1s, ILC2s, ILC3s, and LTi cells. Here, we identify a previously unrecognized subset within the CD127+ ILC population, characterized by the expression of the cytotoxic marker CD94. These CD94+ ILCs resemble conventional ILC3s in terms of phenotype, transcriptome, and cytokine production, but are highly cytotoxic. IL-15 was unable to induce differentiation of CD94+ ILCs toward mature NK cells. Instead, CD94+ ILCs retained RORγt, CD127 and CD200R1 expression and produced IL-22 in response to IL-15. Culturing non-cytotoxic ILC3s with IL-12 induced upregulation of CD94 and cytotoxic activity, effects that were not observed with IL-15 stimulation. Thus, human helper ILCs can acquire a cytotoxic program without differentiating into NK cells.
-            </p>
-
-          </details>
-
-          <a
-            class="publication-link"
-            href="https://doi.org/10.1002/eji.202048696"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View publication →
-          </a>
-
-        </article>
-
-        <article class="publication-full">
-
-          <h3>
-            Innate lymphoid cells: from helper to killer
-          </h3>
-
-          <p class="publication-authors">
-            Krabbendam, L., Bernink, J. H. & Spits, H.
-          </p>
-
-          <p class="publication-journal">
-            Current opinion in immunology, 2021
-          </p>
-
-          <details class="abstract">
-
-            <summary>Read abstract</summary>
-
-            <p>
-              Five subsets of ILCs are extensively described, Lymphoid Tissue inducer (LTi) cells, cytotoxic NK cells and non-cytotoxic helper ILC1s, ILC2s and ILC3s. So far, the main focus has been on the potent cytokine production by helper ILCs and their plastic nature that allows them to switch function and phenotype upon environmental changes. Recent advances in the field indicate the presence of cytotoxic helper ILCs that are distinct from conventional NK cells. In humans, these cytotoxic ILCs can develop from conventional helper ILCs whereas in mice this remains to be elucidated. In this review we discuss the identification, development and function of cytotoxic helper ILCs subsets in humans and mice.
-            </p>
-
-          </details>
-
-          <a
-            class="publication-link"
-            href="https://doi.org/10.1016/j.coi.2020.08.007"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View publication →
-          </a>
-
-        </article>
-
-        <article class="publication-full">
-
-          <h3>
-            Interleukin-33 improves local immunity during Gram-negative pneumonia by a combined effect on neutrophils and inflammatory monocytes
-          </h3>
-
-          <p class="publication-authors">
-            Ramirez-Moral, I., Blok, D. C., Bernink, J. H., Garcia-Laorden, M. I., Florquin, S., Boon, L., van't Veer, C., Mack, M., Saluzzo, S., Knapp, S., Spits, H., de Vos, A. F. & van der Poll, T.
-          </p>
-
-          <p class="publication-journal">
-            Journal of pathology, 2021
-          </p>
-
-          <details class="abstract">
-
-            <summary>Read abstract</summary>
-
-            <p>
-              Pneumonia represents a major health care burden and Gram-negative bacteria provide an increasing therapeutic challenge at least in part through the emergence of multidrug-resistant strains. IL-33 is a multifunctional cytokine belonging to the IL-1 family that can affect many different cell types. We sought here to determine the effect of recombinant IL-33 on the host response during murine pneumonia caused by the common Gram-negative pathogen Klebsiella pneumoniae. IL-33 pretreatment prolonged survival for more than 1 day during lethal airway infection and decreased bacterial loads at the primary site of infection and distant organs. Postponed treatment with IL-33 (3 h) also reduced bacterial growth and dissemination. IL-33-mediated protection was not observed in mice deficient for the IL-33 receptor component IL-1 receptor-like 1. IL-33 induced a brisk type 2 response, characterized by recruitment of type 2 innate lymphoid cells to the lungs and enhanced release of IL-5 and IL-13. However, neither absence of innate lymphoid cells or IL-13, nor blocking of IL-5 impacted on IL-33 effects in mice infected with Klebsiella. Likewise, IL-33 remained effective in reducing bacterial loads in mice lacking B, T, and natural killer T cells. Experiments using antibody-mediated cell depletion indicated that neutrophils and inflammatory monocytes were of importance for antibacterial defense. The capacity of IL-33 to restrict bacterial growth in the lungs was strongly reduced in mice depleted of both neutrophils and inflammatory monocytes, but not in mice selectively depleted of either one of these cell types. These results suggest that IL-33 boosts host defense during bacterial pneumonia by a combined effect on neutrophils and inflammatory monocytes.
-            </p>
-
-          </details>
-
-          <a
-            class="publication-link"
-            href="https://doi.org/10.1002/path.5601"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View publication →
-          </a>
-
-        </article>
-        
-      </div>
-      
     </div>
 
   </section>
@@ -442,7 +505,68 @@
 
 </footer>
 
+
 <script src="script.js"></script>
+
+<script>
+
+const searchInput = document.getElementById("publicationSearch");
+const yearFilters = document.querySelectorAll(".year-filter");
+const publications = document.querySelectorAll(".pure-publication");
+const publicationCount = document.getElementById("publicationCount");
+
+function filterPublications() {
+
+  const search =
+    searchInput.value.toLowerCase();
+
+  const selectedYears =
+    [...yearFilters]
+      .filter(filter => filter.checked)
+      .map(filter => filter.value);
+
+  let visibleCount = 0;
+
+  publications.forEach(publication => {
+
+    const text =
+      publication.innerText.toLowerCase();
+
+    const year =
+      publication.dataset.year;
+
+    const matchesSearch =
+      text.includes(search);
+
+    const matchesYear =
+      selectedYears.length === 0 ||
+      selectedYears.includes(year);
+
+    if (matchesSearch && matchesYear) {
+      publication.style.display = "block";
+      visibleCount++;
+    } else {
+      publication.style.display = "none";
+    }
+
+  });
+
+  publicationCount.textContent = visibleCount;
+}
+
+searchInput.addEventListener(
+  "input",
+  filterPublications
+);
+
+yearFilters.forEach(filter => {
+  filter.addEventListener(
+    "change",
+    filterPublications
+  );
+});
+
+</script>
 
 </body>
 </html>
